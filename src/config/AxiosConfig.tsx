@@ -4,7 +4,7 @@ import type { userType } from "../Types/Types";
 import { toast } from "react-toastify";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "http://localhost:10000",
 });
 
 export let basarili = false;
