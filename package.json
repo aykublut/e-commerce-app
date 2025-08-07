@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "json-server --watch db.json --port 10000",
+    "start": "json-server --watch db.json --port $PORT",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
