@@ -4,7 +4,9 @@ import type { userType } from "../Types/Types";
 import { toast } from "react-toastify";
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:10000",
+  baseURL: import.meta.env.DEV
+    ? "http://localhost:10000" // local geliştirme
+    : "https://json-server-app.onrender.com", // prod deploy adresi
 });
 
 export let basarili = false;
